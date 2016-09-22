@@ -75,6 +75,7 @@ gulp.task('images', function(){
 
 
 gulp.task('sass:watch', function () {
+
     gulp.watch('app/sass/*.sass', ['sass']);
 });
 
