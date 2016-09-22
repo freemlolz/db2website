@@ -968,10 +968,10 @@
     #nav-icon span
       display: block
       position: absolute
-      height: 2px
+      height: 4px
       width: 100%
       background: #d3531a
-      border-radius: 1px
+      border-radius: 2px
       opacity: 1
       left: 0
       -webkit-transform: rotate(0deg)
@@ -1146,6 +1146,8 @@
           padding: 4% 13%
           margin: 10% 0
           outline: none
+          &:hover
+            background-color: #125AAC
       &__items
         text-align: center
         width: 25%
@@ -1173,7 +1175,21 @@
         p
           margin-top: 15%
           font-weight: bold
-        &--triangle-first
+        &--triangle-ix
+          width: 30px
+          height: 30px
+          background-color: #1565c0
+          position: absolute
+          top: 150%
+          bottom: 0
+          left: 0
+          right: 0
+          margin: 0 auto
+          transform: rotate(45deg)
+          z-index: 4
+          box-shadow: 3px 3px 5px 0 rgba(0,0,0,.2)
+          display: block
+        &--triangle-ios
           width: 30px
           height: 30px
           background-color: #1565c0
@@ -1187,7 +1203,7 @@
           z-index: 4
           box-shadow: 3px 3px 5px 0 rgba(0,0,0,.2)
           display: none
-        &--doted-arrow-first
+        &--doted-arrow-ios
           position: absolute
           top: 115%
           bottom: 0
@@ -1198,7 +1214,7 @@
           display: none
           span
             display: inherit
-        &--triangle-second
+        &--triangle-design
           width: 30px
           height: 30px
           background-color: #1565c0
@@ -1212,7 +1228,7 @@
           z-index: 4
           box-shadow: 3px 3px 5px 0 rgba(0,0,0,.2)
           display: none
-        &--doted-arrow-second
+        &--doted-arrow-design
           position: absolute
           top: 115%
           bottom: 0
@@ -1223,7 +1239,7 @@
           display: none
           span
             display: inherit
-        &--triangle-third
+        &--triangle-web
           width: 30px
           height: 30px
           background-color: #1565c0
@@ -1237,7 +1253,7 @@
           z-index: 4
           box-shadow: 3px 3px 5px 0 rgba(0,0,0,.2)
           display: none
-        &--doted-arrow-third
+        &--doted-arrow-web
           position: absolute
           top: 115%
           bottom: 0
@@ -1277,6 +1293,8 @@
           padding: 2% 0
           width: 35%
           outline: none
+          &:hover
+            background-color: #125AAC
       .ui-design, .mobile-development
         display: none
   .portfolio
@@ -1297,8 +1315,11 @@
         font-weight: bold
         padding: 0 10%
         color: #000000
-        opacity: 0.55
-      cursor: pointer
+        cursor: pointer
+        opacity: .55
+      span.active
+        color: #fff
+        opacity: 1
   .portfolio-example
     background: linear-gradient(to top, white 50% , #1565c0 50%)
     margin-bottom: 5%
@@ -1345,14 +1366,14 @@
         border-left: 2px solid rgba(255, 250, 250, 0.2)
         color: #fff
         position: relative
+        &:hover
+          cursor: pointer
         img
           margin-top: 10px
           width: 150px
           height: 150px
           border-radius: 50%
           background-color: white
-          &:hover
-            cursor: pointer
         p
           margin-top: 15%
           font-weight: bold
@@ -1674,6 +1695,8 @@
         font-stretch: condensed
         outline: none
         margin: 2.5% auto
+        &:hover
+          background-color: #f30c06
   .footer
     background-color: #0c4b93
     color: #fff
@@ -1807,76 +1830,4 @@
               font-stretch: condensed
               outline: none
               margin: 2.5% auto
-
-
-
-  /* hover for form send button */
-  @-webkit-keyframes hvr-back-pulse
-    50%
-      background-color: rgba(229, 57, 53, 0.5)
-  @keyframes hvr-back-pulse
-    50%
-      background-color: rgba(229, 57, 53, 0.5)
-
-  .hvr-back-pulse
-    display: inline-block
-    vertical-align: middle
-    -webkit-transform: translateZ(0)
-    transform: translateZ(0)
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0)
-    -webkit-backface-visibility: hidden
-    backface-visibility: hidden
-    -moz-osx-font-smoothing: grayscale
-    overflow: hidden
-    -webkit-transition-duration: 0.5s
-    transition-duration: 0.5s
-    -webkit-transition-property: color, background-color
-    transition-property: color, background-color
-
-  .hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active
-    -webkit-animation-name: hvr-back-pulse
-    animation-name: hvr-back-pulse
-    -webkit-animation-duration: 1s
-    animation-duration: 1s
-    -webkit-animation-delay: 0.5s
-    animation-delay: 0.5s
-    -webkit-animation-timing-function: linear
-    animation-timing-function: linear
-    -webkit-animation-iteration-count: infinite
-    animation-iteration-count: infinite
-
-  /* hover for what we do buttons */
-  @-webkit-keyframes hvr-bck-pulse
-    50%
-      background-color: rgb(64, 58, 183)
-  @keyframes hvr-bck-pulse
-    50%
-      background-color: rgb(64, 58, 183)
-
-  .hvr-bck-pulse
-    display: inline-block
-    vertical-align: middle
-    -webkit-transform: translateZ(0)
-    transform: translateZ(0)
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0)
-    -webkit-backface-visibility: hidden
-    backface-visibility: hidden
-    -moz-osx-font-smoothing: grayscale
-    overflow: hidden
-    -webkit-transition-duration: 0.5s
-    transition-duration: 0.5s
-    -webkit-transition-property: color, background-color
-    transition-property: color, background-color
-
-  .hvr-bck-pulse:hover, .hvr-bck-pulse:focus, .hvr-bck-pulse:active
-    -webkit-animation-name: hvr-bck-pulse
-    animation-name: hvr-bck-pulse
-    -webkit-animation-duration: 1s
-    animation-duration: 1s
-    -webkit-animation-delay: 0.5s
-    animation-delay: 0.5s
-    -webkit-animation-timing-function: linear
-    animation-timing-function: linear
-    -webkit-animation-iteration-count: infinite
-    animation-iteration-count: infinite
 

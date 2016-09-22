@@ -60,7 +60,8 @@ gulp.task('scripts', function() {
         'app/js/text-rotator.js',
         'app/js/menu-and-scroll.js',
         'app/js/tabs.js',
-        'app/js/menu-indicator.js'
+        'app/js/menu-indicator.js',
+        'app/js/responsive.js'
     ])
         .pipe(concat('app.js'))
         .pipe(uglify())
