@@ -9,8 +9,9 @@
     <title>DB2</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/app.css"/>
-
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="../dist/css/app.css"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
 </head>
 <body>
 <!--[if lt IE 8]>
@@ -18,42 +19,49 @@
 <![endif]-->
 <div class="main">
     <div class="header">
-    </div>
-
-    <div class="portfolio">
-        <div class="work">
-            <div class="work-basic" style="background-image: url(img/works/bg-punk.png)">
-                <div class="work-basic__wrapp">
-                    <div class="work__logo">
-                        <img src="img/works/logo-punk.svg" alt="">
-                    </div>
-                    <p class="work__descr">
-                        Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien.
-                    </p>
+        <div class="container">
+            <div class="navigation">
+                <div id="nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-
             </div>
-            <div class="work-more"></div>
+            <div class="navigation-blackout">
+                <div class="menu-items">
+                    <p><a href="#what_we_do">WHAT WE DO</a></p>
+                    <p><a href="#portfolio">PORTFOLIO</a></p>
+                    <p><a href="#our_team">OUR TEAM</a></p>
+                    <p><a href="#clients_about_us">CLIENTS ABOUT US</a></p>
+                    <p><a href="#connect_with_us">CONNECT WITH US</a></p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="navigation">
-        <div id="nav-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+    <div class="works">
+        <div class="container">
+            <div class="work">
+                <div class="work-basic" style="background-image: url(img/works/bg-punk@2x.png)">
+                    <div class="work-basic__wrapp">
+                        <div class="work__logo">
+                            <img src="img/works/logo-punk.svg" alt="">
+                        </div>
+                        <p class="work__descr">
+                            Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien.
+                        </p>
+                        <div class="work__site"><a href="#">www.investmentpunk.academy</a></div>
+                    </div>
+                    <div class="work__more-btn">
+                        <span class="more-btn more-btn--opened"></span>
+                    </div>
+                </div>
+                <div class="work-more"></div>
+            </div>
         </div>
     </div>
-    <div class="navigation-blackout">
-        <div class="menu-items">
-            <p><a href="#what_we_do">WHAT WE DO</a></p>
-            <p><a href="#portfolio">PORTFOLIO</a></p>
-            <p><a href="#our_team">OUR TEAM</a></p>
-            <p><a href="#clients_about_us">CLIENTS ABOUT US</a></p>
-            <p><a href="#connect_with_us">CONNECT WITH US</a></p>
-        </div>
-    </div>
+
     <div class="contact-form">
         <a name="connect_with_us"></a>
         <h2 class="contact-form__title">CONNECT WITH US</h2>
@@ -83,6 +91,6 @@
         </a>
     </div>
 </div>
-<script src="js/app.js"></script>
+<!--<script src="../dist/js/app.js"></script>-->
 </body>
 </html>

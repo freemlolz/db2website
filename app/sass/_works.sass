@@ -1,0 +1,79 @@
+.header
+  height: 100px
+  background-color: #f8f8f8
+.works
+  background-color: #f8f8f8
+.work
+  position: relative
+  font-family: Roboto, sans-serif
+  color: #fff
+  &__descr
+    font-size: 15px
+    line-height: 1.4
+    margin: 20px 0
+  &__more-btn
+    position: absolute
+    left: 50%
+    bottom: 0
+    transform: translateY(50%) translateX(-50%)
+  &__site
+    position: relative
+    display: inline-block
+    a
+      color: #fff
+      font-size: 13px
+      text-decoration: underline
+    &:before
+      content: ''
+      position: absolute
+      top: 5px
+      left: -20px
+      width: 13px
+      height: 13px
+      background-image: url(../img/icons/www.svg)
+      background-size: cover
+
+
+.work-basic
+  min-height: 460px
+  background-size: cover
+  &__wrapp
+    padding: 40px 20px 20px
+    width: 50%
+    text-align: center
+
+
+.more-btn
+  position: relative
+  display: inline-block
+  height: 32px
+  width: 140px
+  background-color: #e53935
+  border-radius: 30px
+  &:before
+    content: ''
+    width: 19px
+    height: 13px
+    background-image: url(../img/icons/eye-hide.svg)
+    background-size: cover
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 15%
+  &:after
+    content: 'Detail view'
+    font-size: 13px
+    color: #fff
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 32%
+  &--opened
+    &:before
+      width: 19px
+      height: 13px
+      background-image: url(../img/icons/eye-hide.svg)
+      left: 28%
+    &:after
+      content: 'Hide'
+      left: 48%
