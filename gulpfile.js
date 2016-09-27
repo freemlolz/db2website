@@ -57,11 +57,11 @@ gulp.task('scripts', function() {
         'bower_components/jquery/dist/jquery.js',
         'bower_components/jquery-ui/jquery-ui.min.js',
         'bower_components/bootstrap/dist/js/bootstrap.js',
-        'app/js/text-rotator.js',
-        'app/js/menu-and-scroll.js',
-        'app/js/tabs.js',
-        'app/js/menu-indicator.js',
-        'app/js/responsive.js'
+        'app/js/*.js'
+        // 'app/js/menu-and-scroll.js',
+        // 'app/js/tabs.js',
+        // 'app/js/menu-indicator.js',
+        // 'app/js/responsive.js'
     ])
         .pipe(concat('app.js'))
         .pipe(uglify())

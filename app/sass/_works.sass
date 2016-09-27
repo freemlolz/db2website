@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700'
+
 .header
   height: 100px
   background-color: #f8f8f8
@@ -33,8 +35,21 @@
       background-image: url(../img/icons/www.svg)
       background-size: cover
 
+.work-store-icons
+  text-align: center
+  font-size: 0
+  padding: 50px 0 20px
+  .store-icon
+    margin: 0 10px
+.work-control-icons
+  text-align: center
+  font-size: 0
+  padding-bottom: 22px
+  .work-control-icon
+    margin: 0 10px
 
 .work-basic
+  position: relative
   min-height: 460px
   background-size: cover
   &__wrapp
@@ -42,6 +57,73 @@
     width: 50%
     text-align: center
 
+.work-more
+  background-color: #fff
+  max-height: 0
+  overflow: hidden
+  transition: .5s max-height, easy-in-out
+  &--opened
+    max-height: 2000px
+  &__title
+    margin: 0
+    padding-top: 58px
+    font-family: 'Roboto Condensed', sans-serif
+    font-size: 32px
+    font-weight: bold
+    font-stretch: condensed
+    text-align: center
+    color: #4a4a4a
+  &__descr
+    font-size: 15px
+    line-height: 1.47
+    max-width: 645px
+    margin: 35px auto
+    text-align: justify
+    color: #4a4a4a
+  &__tags
+    font-size: 13px
+    font-weight: 500
+    line-height: 1.69
+    text-align: center
+    color: #1565c0
+    margin-bottom: 35px
+  .work-store-icons
+    padding: 50px 0
+  .store-icon
+    background-color: #4a4a4a
+    &:hover
+      background-color: rgba(0, 0, 0, 0.2)
+
+.work-colors
+  &__title
+    margin: 0
+    font-family: 'Roboto Condensed', sans-serif
+    font-size: 40px
+    font-weight: bold
+    text-align: center
+    color: rgba(0,0,0, .04)
+  &__wrapp
+    text-align: center
+    font-size: 0
+    padding: 35px 0
+  &__color
+    transition: .3s all
+    display: inline-block
+    vertical-align: middle
+    width: 80px
+    height: 80px
+    border-radius: 50%
+    text-transform: uppercase
+    color: #fff
+    font-size: 14px
+    line-height: 80px
+    margin: 0 14px
+    &:hover
+      font-size: 16px
+      height: 100px
+      width: 100px
+      line-height: 100px
+      margin: -20px
 
 .more-btn
   position: relative
@@ -77,3 +159,55 @@
     &:after
       content: 'Hide'
       left: 48%
+
+.store-icon
+  display: inline-block
+  cursor: pointer
+  width: 160px
+  height: 50px
+  border-radius: 30px
+  transition: .5s all
+  background-color: rgba(0, 0, 0, 0.2)
+  background-size: 75%
+  background-repeat: no-repeat
+  background-position: center
+  &:hover
+    background-color: #252525
+  &--google
+    background-image: url(../img/icons/google.svg)
+  &--appstore
+    background-image: url(../img/icons/appstore.svg)
+
+.work-control-icon
+  display: inline-block
+  cursor: pointer
+  width: 40px
+  height: 40px
+  border-radius: 50%
+  transition: .5s all
+  background-color: rgba(0, 0, 0, 0.2)
+  background-size: 54%
+  background-repeat: no-repeat
+  background-position: center
+  &:hover
+    background-color: #252525
+  &--back
+    background-image: url(../img/icons/dribbble.svg)
+  &--behance
+    background-image: url(../img/icons/behance.svg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
