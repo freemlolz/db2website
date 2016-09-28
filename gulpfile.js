@@ -23,6 +23,7 @@ gulp.task('sass', function () {
         'app/sass/*.scss',
         'app/font-awesome/*.scss',
         'bower_components/bootstrap/dist/css/bootstrap.css',
+        'bower_components/slick-carousel/slick/slick.scss',
         'app/sass/*.sass'
     ])
         .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
@@ -57,6 +58,7 @@ gulp.task('scripts', function() {
         'bower_components/jquery/dist/jquery.js',
         'bower_components/jquery-ui/jquery-ui.min.js',
         'bower_components/bootstrap/dist/js/bootstrap.js',
+        'bower_components/slick-carousel/slick/slick.min.js',
         'app/js/*.js'
         // 'app/js/menu-and-scroll.js',
         // 'app/js/tabs.js',

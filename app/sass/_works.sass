@@ -41,6 +41,7 @@
   padding: 50px 0 20px
   .store-icon
     margin: 0 10px
+
 .work-control-icons
   text-align: center
   font-size: 0
@@ -56,6 +57,10 @@
     padding: 40px 20px 20px
     width: 50%
     text-align: center
+    &--left
+      float: left
+    &--right
+      float: right
 
 .work-more
   background-color: #fff
@@ -196,11 +201,72 @@
   &--behance
     background-image: url(../img/icons/behance.svg)
 
+.work-slider
+  max-width: 900px
+  margin: 0 auto
+  div
+    outline: 0
+  &__slide
+    padding: 0 12px
+    img
+      width: 100%
+      height: auto
+  .slick-dots
+    margin: 40px 0
+    padding: 0
+    text-align: center
+    li
+      display: inline-block
+      vertical-align: middle
+      margin: 0 8px
+      button
+        outline: 0
+        background: none
+        font-size: 0
+        padding: 0
+        border-radius: 50%
+        width: 8px
+        height: 8px
+        border: 1px solid #c4c4c4
+      &.slick-active button
+        background-color: #e53935
+        border: solid 1px #e53935
 
+@media (max-width: 850px)
+  .main-portfolio .container
+    width: 100%
+    padding: 0
+  .work-basic
+    &__wrapp
+      width: 70%
+  .work-more
+    padding: 0 10px
+@media (max-width: 660px)
+  .work-basic
+    &__wrapp
+      width: 100%
+  .work-colors
+    &__color
+      width: 60px
+      height: 60px
+      font-size: 12px
+      line-height: 60px
+      margin: 5px 10px
+      &:hover
+        font-size: 12px
+        height: 60px
+        width: 60px
+        //line-height: 80px
+        //margin: -5px -10px
 
-
-
-
+@media (max-width: 460px)
+  .work-basic
+    &__wrapp
+      width: 100%
+  .work-store-icons
+    padding: 30px 0
+    .store-icon
+      margin: 5px
 
 
 
