@@ -114,7 +114,7 @@ $(document).ready(function(){
             $('.main .portfolio__tabs span.android_tab').removeClass('active');
             $('.portfolio-example.ios').css('display', 'none');
             $('.portfolio-example.android').css('display', 'none');
-            $('.portfolio-example.web').css('display', 'block');
+            $('.portfolio-example.web').css('display', 'flex');
         });
     $('.portfolio__tabs .ios_tab')
         .on('click', function(){
@@ -123,7 +123,7 @@ $(document).ready(function(){
             $('.main .portfolio__tabs span.android_tab').removeClass('active');
             $('.portfolio-example.web').css('display', 'none');
             $('.portfolio-example.android').css('display', 'none');
-            $('.portfolio-example.ios').css('display', 'block');
+            $('.portfolio-example.ios').css('display', 'flex');
         });
     $('.portfolio__tabs .android_tab')
         .on('click', function(){
@@ -132,6 +132,6 @@ $(document).ready(function(){
             $('.main .portfolio__tabs span.android_tab').addClass('active');
             $('.portfolio-example.web').css('display', 'none');
             $('.portfolio-example.ios').css('display', 'none');
-            $('.portfolio-example.android').css('display', 'block');
+            $('.portfolio-example.android').css('display', 'flex');
         });
 });

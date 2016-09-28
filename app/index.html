@@ -6,12 +6,16 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>DB2</title>
+    <title>DB2 Limited</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="../dist/css/app.css"/>
     <link rel="stylesheet" href="css/responsive.css"/>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
 </head>
 <body>
 <!--[if lt IE 8]>
@@ -45,28 +49,10 @@
             <p><a href="#connect_with_us">CONNECT WITH US</a></p>
         </div>
     </div>
-    <div class="slider">
-        <div id="carousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel" data-slide-to="1"></li>
-                <li data-target="#carousel" data-slide-to="2"></li>
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-inner__item item active">
-                    <img src="../dist/img/s_mbp.png" alt="...">
-                </div>
-                <div class="carousel-inner__item item">
-                    <img src="../dist/img/s_phone.png" alt="...">
-                </div>
-                <div class="carousel-inner__item item">
-                    <img src="../dist/img/s_watch.png" alt="...">
-                </div>
-            </div>
-        </div>
+    <div class="slider center autoplay">
+        <div><img src="img/slider/1.png" alt="..."></div>
+        <div><img src="img/slider/2.png" alt="..."></div>
+        <div><img src="img/slider/3.png" alt="..."></div>
     </div>
     <div class="what-we-do">
         <div class="top-wrap">
@@ -169,6 +155,8 @@
         </div>
     </div>
     <div class="portfolio-example web">
+        <img src="../dist/img/portfolio-item.png" alt=""/>
+        <img src="../dist/img/portfolio-item.png" alt=""/>
         <img src="../dist/img/portfolio-item.png" alt=""/>
         <img src="../dist/img/portfolio-item.png" alt=""/>
         <img src="../dist/img/portfolio-item.png" alt=""/>
@@ -415,5 +403,39 @@
 </div>
 <script src="../dist/js/app.js"></script>
 <script src="js/modernizr-2.8.3.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.center').slick({
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+            centerMode: true,
+            centerPadding: '15%',
+            slidesToShow: 1,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
 </body>
 </html>

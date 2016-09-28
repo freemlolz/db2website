@@ -1,84 +1,22 @@
 @media screen and (max-width: 1920px){
-    .main .what-we-do .top-wrap__items--doted-arrow-first, .main .what-we-do .top-wrap__items--doted-arrow-second, .main .what-we-do .top-wrap__items--doted-arrow-third{
-        top: 135%
-    }
-    .main .what-we-do .top-wrap__items--triangle-first, .main .what-we-do .top-wrap__items--triangle-second, .main .what-we-do .top-wrap__items--triangle-third {
-        top: 164%;
-    }
-    .main .our-team .top-wrap__items--doted-arrow-first, .main .our-team .top-wrap__items--doted-arrow-second, .main .our-team .top-wrap__items--doted-arrow-third {
-        top: 105%;
-    }
-    .main .our-team .top-wrap__items--triangle-first, .main .our-team .top-wrap__items--triangle-second, .main .our-team .top-wrap__items--triangle-third {
-        top: 134%;
-    }
     .main .clients-about-us {
         padding: 10% 0
     }
 }
-@media screen and (max-width: 1681px) {
-    .main .what-we-do .top-wrap__items--doted-arrow-first, .main .what-we-do .top-wrap__items--doted-arrow-second, .main .what-we-do .top-wrap__items--doted-arrow-third {
-        top: 120%;
-    }
-    .main .what-we-do .top-wrap__items--triangle-first, .main .what-we-do .top-wrap__items--triangle-second, .main .what-we-do .top-wrap__items--triangle-third {
-        top: 155%;
-    }
-    .main .our-team .top-wrap__items--triangle-first, .main .our-team .top-wrap__items--triangle-second, .main .our-team .top-wrap__items--triangle-third {
-        top: 132%;
-    }
-}
-@media screen and (max-width: 1600px) {
-    .main .what-we-do .top-wrap__items--triangle-first, .main .what-we-do .top-wrap__items--triangle-second, .main .what-we-do .top-wrap__items--triangle-third {
-        top: 157%;
-    }
-    .main .our-team .top-wrap__items--triangle-first, .main .our-team .top-wrap__items--triangle-second, .main .our-team .top-wrap__items--triangle-third {
-        top: 130%;
-    }
-    .main .our-team .top-wrap__items--doted-arrow-first, .main .our-team .top-wrap__items--doted-arrow-second, .main .our-team .top-wrap__items--doted-arrow-third {
-        top: 102.5%;
-    }
-}
 @media screen and (max-width: 1440px) {
-    .main .what-we-do .top-wrap__items--doted-arrow-first, .main .what-we-do .top-wrap__items--doted-arrow-second, .main .what-we-do .top-wrap__items--doted-arrow-third {
-        top: 115%;
-    }
-    .main .what-we-do .top-wrap__items--triangle-first, .main .what-we-do .top-wrap__items--triangle-second, .main .what-we-do .top-wrap__items--triangle-third {
-        top: 151%;
-    }
+
     .main .clients-about-us {
         padding: 15% 0;
     }
 }
-@media screen and (max-width: 1366px) {
-    .main .what-we-do .top-wrap__items--triangle-first, .main .what-we-do .top-wrap__items--triangle-second, .main .what-we-do .top-wrap__items--triangle-third {
-        top: 148%;
-    }
-    .main .our-team .top-wrap__items--doted-arrow-first, .main .our-team .top-wrap__items--doted-arrow-second, .main .our-team .top-wrap__items--doted-arrow-third {
-        top: 99.5%;
-    }
-    .main .our-team .top-wrap__items--triangle-first, .main .our-team .top-wrap__items--triangle-second, .main .our-team .top-wrap__items--triangle-third {
-        top: 128%;
-    }
-}
+
 @media screen and (max-width: 1281px) {
     .main .portfolio-example img {
         max-width: 25%;
     }
-    .main .what-we-do .top-wrap__items--triangle-first, .main .what-we-do .top-wrap__items--triangle-second, .main .what-we-do .top-wrap__items--triangle-third {
-        top: 145%;
-    }
-    .main .what-we-do .top-wrap__items--doted-arrow-first, .main .what-we-do .top-wrap__items--doted-arrow-second, .main .what-we-do .top-wrap__items--doted-arrow-third {
-        top: 110%;
-    }
     .main .our-team .top-wrap .left-block {
         padding: 7.5% 5%;
     }
-    .main .our-team .top-wrap__items--doted-arrow-first, .main .our-team .top-wrap__items--doted-arrow-second, .main .our-team .top-wrap__items--doted-arrow-third {
-        top: 99%;
-    }
-    .main .what-we-do .top-wrap__items--triangle-web {
-        top:145.5%;
-    }
-    .main .what-we-do .top-wrap__items--doted-arrow-web {top:110%;}
 }
 @media screen and (max-width: 1024px) and (orientation: landscape) {
     .main .what-we-do .top-wrap {flex-wrap: wrap;padding-bottom: 5%;}
@@ -92,15 +30,6 @@
         border-left: 2px solid rgba(255,250,250,.2);
         border-right: 2px solid rgba(255,250,250,.2);
     }
-    .main .what-we-do .top-wrap__items--triangle-web,
-    .main .what-we-do .top-wrap__items--triangle-ios,
-    .main .what-we-do .top-wrap__items--triangle-design
-    {top: 116%;}
-    .main .what-we-do .top-wrap__items--doted-arrow-web,
-    .main .what-we-do .top-wrap__items--doted-arrow-ios,
-    .main .what-we-do .top-wrap__items--doted-arrow-design {
-        display: none;
-    }
     .main .what-we-do .bot-wrap .right-block {
         width: 100%;
         text-align: center;
@@ -112,7 +41,7 @@
     .main .portfolio__title {width: 65%;}
     .main .portfolio__title h2 {font-size: 1.25em;}
     .main .portfolio__tabs span {font-size: 1.15em;}
-    .main .portfolio-example img { max-width: 20%;}
+    .main .portfolio-example {display: flex; overflow: auto; flex-flow: row nowrap;}
     .main .our-team .top-wrap {flex-wrap: wrap; padding-bottom: 5%;}
     .main .our-team .top-wrap .left-block {padding: 8.5% 10%;width: 100%;text-align: center;}
     .main .our-team .top-wrap__items {border: none;width: 33%;}
@@ -120,12 +49,10 @@
         font-size: 2.5em;
         margin: 2.5% 0;
     }
-    .main .what-we-do .top-wrap__items--doted-arrow-first, .main .what-we-do .top-wrap__items--doted-arrow-second, .main .what-we-do .top-wrap__items--doted-arrow-third {
-        top: 100%;
-    }
     .main .portfolio-example img {
         box-shadow: 0 0 10px 1px rgba(0,0,0,.43);
         margin: 5% 5%;
+        max-width: 35%;
     }
     .main .stack .stack-img {
         padding: 0 2.5%;
@@ -135,48 +62,3 @@
         padding: 10.5% 25%;
     }
 }
-/*@media screen and (device-width: 768px) and (orientation: portrait) {*/
-    /*.main .what-we-do .top-wrap__items--doted-arrow-first,.main .what-we-do .top-wrap__items--doted-arrow-second, .main .what-we-do .top-wrap__items--doted-arrow-third {*/
-        /*top:100%;*/
-    /*}*/
-    /*.main .what-we-do .top-wrap .left-block__title {*/
-        /*font-size: 2.25em;*/
-    /*}*/
-    /*.main .what-we-do .top-wrap__items--triangle-first, .main .what-we-do .top-wrap__items--triangle-second, .main .what-we-do .top-wrap__items--triangle-third {*/
-        /*display: none!important;*/
-    /*}*/
-    /*.main .what-we-do .bot-wrap .right-block {*/
-        /*width: 100%;*/
-        /*padding: 0 10%;*/
-    /*}*/
-    /*.main .portfolio__title {*/
-        /*width: 50%;*/
-    /*}*/
-    /*.main .portfolio__tabs {*/
-        /*width: 50%;*/
-    /*}*/
-    /*.main .portfolio-example img {*/
-        /*margin: 2.5% auto;*/
-    /*}*/
-    /*.main .stack .stack-img {*/
-        /*margin: 2.5% auto;*/
-        /*padding: 0 2.5%;*/
-    /*}*/
-    /*.main .stack .stack-img img {*/
-        /*margin: auto 2.5%;*/
-    /*}*/
-    /*.main .our-team .top-wrap__items--triangle-first, .main .our-team .top-wrap__items--triangle-second, .main .our-team .top-wrap__items--triangle-third {*/
-        /*display: none!important;*/
-    /*}*/
-    /*.main .clients-about-us .outer {*/
-        /*width: 100%;*/
-        /*margin: auto;*/
-    /*}*/
-    /*.main .contact-form {*/
-        /*margin-top: 15%;*/
-        /*padding: 5% 5%;*/
-    /*}*/
-    /*.main #get-more-info-modal .modal-dialog {*/
-        /*width: 100%;*/
-    /*}*/
-/*}*/
