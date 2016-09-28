@@ -1,14 +1,38 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700'
 
+
 .header
   height: 100px
   background-color: #f8f8f8
+  .logo
+    float: left
+    margin-top: 25px
+    img
+      max-width: 45px
+  .navigation
+    position: relative
+    top: 30px
+    right: 0
+    float: right
+  .get-started
+    text-transform: uppercase
+    float: right
+    margin: 38px 45px 0 0
+    font-family: "Roboto Condensed", sans-serif
+    text-align: center
+    color: #252525
+
 .works
   background-color: #f8f8f8
 .work
+  margin-bottom: 40px
   position: relative
   font-family: Roboto, sans-serif
   color: #fff
+  &--dark
+    color: #4a4a4a
+  &:last-child
+    margin-bottom: 0
   &__descr
     font-size: 15px
     line-height: 1.4
@@ -232,15 +256,23 @@
         background-color: #e53935
         border: solid 1px #e53935
 
-@media (max-width: 850px)
+.main-portfolio .container
+  width: 100%
+  max-width: 1200px
+
+@media (max-width: 960px)
   .main-portfolio .container
     width: 100%
     padding: 0
+  .main-portfolio .header
+    .container
+      padding: 0 15px
   .work-basic
     &__wrapp
       width: 70%
   .work-more
     padding: 0 10px
+
 @media (max-width: 660px)
   .work-basic
     &__wrapp

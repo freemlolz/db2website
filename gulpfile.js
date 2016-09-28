@@ -20,7 +20,6 @@ gulp.task('clean', function() {
 
 gulp.task('sass', function () {
     return gulp.src([
-        'app/sass/*.scss',
         'app/font-awesome/*.scss',
         'bower_components/bootstrap/dist/css/bootstrap.css',
         'bower_components/slick-carousel/slick/slick.scss',
