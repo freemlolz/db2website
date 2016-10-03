@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="../dist/css/app.css"/>
     <link rel="stylesheet" href="css/responsive.css"/>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <!-- Add the slick-theme.css if you want default styling -->
@@ -49,7 +50,8 @@
             <p><a href="#connect_with_us">CONNECT WITH US</a></p>
         </div>
     </div>
-    <div class="slider center autoplay">
+    <div class="get-started landing"><a href="">get started</a></div>
+    <div class="slider center autoplay" id="head-slider">
         <div><img src="img/slider/1.png" alt="..."></div>
         <div><img src="img/slider/2.png" alt="..."></div>
         <div><img src="img/slider/3.png" alt="..."></div>
@@ -66,7 +68,7 @@
                 <div class="top-wrap__items--border-wrap ios">
                     <img src="../dist/img/apps-icon.svg" alt=""/>
                 </div>
-                <p>IOS & ANDRIOD<br> APPS</p>
+                <p>IOS & ANDRIOD<br>APPS</p>
                 <div class="top-wrap__items--doted-arrow-ios">
                     <span>&#149;</span>
                     <span>&#149;</span>
@@ -94,7 +96,7 @@
                 <div class="top-wrap__items--border-wrap web">
                     <img src="../dist/img/web-icon.svg" alt=""/>
                 </div>
-                <p>WEB<br/> DEVELOPMENT</p>
+                <p>WEB<br/>DEVELOPMENT</p>
                 <div class="top-wrap__items--doted-arrow-web">
                     <span>&#149;</span>
                     <span>&#149;</span>
@@ -116,7 +118,7 @@
                     Ut pretium pretium tempor. Ut eget imperdiet neque.
                 </p>
                 <button class="right-block__button">BRIEF</button>
-                <button class="right-block__button">PORTFOLIO</button>
+                <button class="right-block__button"><a href="portfolio.html">PORTFOLIO</a></button>
             </div>
             <div class="right-block ui-design">
                 <h2 class="right-block__title">UX & UI DESIGN</h2>
@@ -128,10 +130,10 @@
                     Ut pretium pretium tempor. Ut eget imperdiet neque.
                 </p>
                 <button class="hvr-bck-pulse right-block__button">BRIEF</button>
-                <button class="hvr-bck-pulse right-block__button">PORTFOLIO</button>
+                <button class="hvr-bck-pulse right-block__button"><a href="portfolio.html">PORTFOLIO</a></button>
             </div>
             <div class="right-block mobile-development">
-                <h2 class="right-block__title">IOS & ANDRIOD  APPS</h2>
+                <h2 class="right-block__title">IOS & ANDRIOD APPS</h2>
                 <p class="right-block__description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Ut pretium pretium tempor. Ut eget imperdiet neque.
@@ -140,7 +142,45 @@
                     Ut pretium pretium tempor. Ut eget imperdiet neque.
                 </p>
                 <button class="right-block__button">BRIEF</button>
-                <button class="right-block__button">PORTFOLIO</button>
+                <button class="right-block__button"><a href="portfolio.html">PORTFOLIO</a></button>
+            </div>
+            <div class="what-we-do__right-block--mobile">
+                <div><div class="right-block web-development">
+                    <h2 class="right-block__title">WEB DEVELOPMENT</h2>
+                    <p class="right-block__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ut pretium pretium tempor. Ut eget imperdiet neque.
+                        In volutpat ante semper diam molestie, et aliquam erat laoreet.
+                        Sed sit amet arcu aliquet, molestie justo at, auctor nunc.
+                        Ut pretium pretium tempor. Ut eget imperdiet neque.
+                    </p>
+                    <button class="right-block__button">BRIEF</button>
+                    <button class="right-block__button">PORTFOLIO</button>
+                </div></div>
+                <div><div class="right-block ui-design">
+                    <h2 class="right-block__title">UX & UI DESIGN</h2>
+                    <p class="right-block__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ut pretium pretium tempor. Ut eget imperdiet neque.
+                        In volutpat ante semper diam molestie, et aliquam erat laoreet.
+                        Sed sit amet arcu aliquet, molestie justo at, auctor nunc.
+                        Ut pretium pretium tempor. Ut eget imperdiet neque.
+                    </p>
+                    <button class="hvr-bck-pulse right-block__button">BRIEF</button>
+                    <button class="hvr-bck-pulse right-block__button">PORTFOLIO</button>
+                </div></div>
+                <div><div class="right-block mobile-development">
+                    <h2 class="right-block__title">IOS & ANDRIOD APPS</h2>
+                    <p class="right-block__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ut pretium pretium tempor. Ut eget imperdiet neque.
+                        In volutpat ante semper diam molestie, et aliquam erat laoreet.
+                        Sed sit amet arcu aliquet, molestie justo at, auctor nunc.
+                        Ut pretium pretium tempor. Ut eget imperdiet neque.
+                    </p>
+                    <button class="right-block__button">BRIEF</button>
+                    <button class="right-block__button">PORTFOLIO</button>
+                </div></div>
             </div>
         </div>
     </div>
@@ -155,21 +195,82 @@
         </div>
     </div>
     <div class="portfolio-example web">
-        <img src="../dist/img/portfolio-item.png" alt=""/>
-        <img src="../dist/img/portfolio-item.png" alt=""/>
-        <img src="../dist/img/portfolio-item.png" alt=""/>
-        <img src="../dist/img/portfolio-item.png" alt=""/>
-        <img src="../dist/img/portfolio-item.png" alt=""/>
+        <div class="img-box">
+            <a href="portfolio.html">
+                <img src="../dist/img/latest%20in%20portfolio/bubble.png" alt=""/>
+                <div class="hover-eye"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></div>
+            </a>
+        </div>
+        <div class="img-box">
+            <a href="portfolio.html">
+                <img src="../dist/img/latest%20in%20portfolio/doctor.png" alt=""/>
+                <div class="hover-eye"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></div>
+            </a>
+        </div>
+        <div class="img-box">
+            <a href="portfolio.html">
+                <img src="../dist/img/latest%20in%20portfolio/investing%20solutions.png" alt=""/>
+                <div class="hover-eye"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></div>
+            </a>
+        </div>
+        <div class="img-box">
+            <a href="portfolio.html">
+                <img src="../dist/img/latest%20in%20portfolio/punk.png" alt=""/>
+                <div class="hover-eye"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></div>
+            </a>
+        </div>
     </div>
     <div class="portfolio-example ios">
-        <img src="../dist/img/portfolio-item2.png" alt=""/>
-        <img src="../dist/img/portfolio-item2.png" alt=""/>
-        <img src="../dist/img/portfolio-item2.png" alt=""/>
+        <div class="img-box">
+            <a href="portfolio.html">
+                <img src="../dist/img/latest%20in%20portfolio/bubble.png" alt=""/>
+                <div class="hover-eye"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></div>
+            </a>
+        </div>
+        <div class="img-box">
+            <a href="portfolio.html">
+                <img src="../dist/img/latest%20in%20portfolio/punk.png" alt=""/>
+                <div class="hover-eye"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></div>
+            </a>
+        </div>
+        <div class="img-box">
+            <a href="portfolio.html">
+                <img src="../dist/img/latest%20in%20portfolio/doctor.png" alt=""/>
+                <div class="hover-eye"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></div>
+            </a>
+        </div>
+        <div class="img-box">
+            <a href="portfolio.html">
+                <img src="../dist/img/latest%20in%20portfolio/investing%20solutions.png" alt=""/>
+                <div class="hover-eye"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></div>
+            </a>
+        </div>
     </div>
     <div class="portfolio-example android">
-        <img src="../dist/img/portfolio-item.png" alt=""/>
-        <img src="../dist/img/portfolio-item.png" alt=""/>
-        <img src="../dist/img/portfolio-item.png" alt=""/>
+        <div class="img-box">
+            <a href="portfolio.html">
+                <img src="../dist/img/latest%20in%20portfolio/investing%20solutions.png" alt=""/>
+                <div class="hover-eye"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></div>
+            </a>
+        </div>
+        <div class="img-box">
+            <a href="portfolio.html">
+                <img src="../dist/img/latest%20in%20portfolio/punk.png" alt=""/>
+                <div class="hover-eye"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></div>
+            </a>
+        </div>
+        <div class="img-box">
+            <a href="portfolio.html">
+                <img src="../dist/img/latest%20in%20portfolio/bubble.png" alt=""/>
+                <div class="hover-eye"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></div>
+            </a>
+        </div>
+        <div class="img-box">
+            <a href="portfolio.html">
+                <img src="../dist/img/latest%20in%20portfolio/doctor.png" alt=""/>
+                <div class="hover-eye"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></div>
+            </a>
+        </div>
     </div>
     <div class="stack">
         <div class="stack-img">
@@ -197,8 +298,8 @@
 
             </div>
             <div class="top-wrap__items first">
-                <img src="../dist/img/pikachu.svg" alt=""/>
-                <p>IOS & ANDRIOD <br> DEVELOPER</p>
+                <img src="../dist/img/team/kostenchyk.png" alt=""/>
+                <p>ANDRIOD<br/>DEVELOPER</p>
                 <div class="top-wrap__items--doted-arrow-first">
                     <span>&#149;</span>
                     <span>&#149;</span>
@@ -209,7 +310,7 @@
                 <div class="top-wrap__items--triangle-first"></div>
             </div>
             <div class="top-wrap__items second">
-                <img src="../dist/img/charmander.svg" alt=""/>
+                <img src="../dist/img/team/Chagovets.png" alt=""/>
                 <p>UX & UI<br/>DESIGNER</p>
                 <div class="top-wrap__items--doted-arrow-second">
                     <span>&#149;</span>
@@ -221,8 +322,8 @@
                 <div class="top-wrap__items--triangle-second"></div>
             </div>
             <div class="top-wrap__items third">
-                <img src="../dist/img/meowth.svg" alt=""/>
-                <p>IOS<br/> DEVELOPMENT</p>
+                <img src="../dist/img/team/Burikin.png" alt=""/>
+                <p>WEB<br/>DEVELOPMENT</p>
                 <div class="top-wrap__items--doted-arrow-third">
                     <span>&#149;</span>
                     <span>&#149;</span>
@@ -234,28 +335,85 @@
             </div>
         </div>
         <div class="bot-wrap">
-            <div class="left-block">
-                <div id="team-carousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#team-carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#team-carousel" data-slide-to="1"></li>
-                        <li data-target="#team-carousel" data-slide-to="2"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="../dist/img/our-team-item.png" alt="...">
-                        </div>
-                        <div class="item">
-                            <img src="../dist/img/our-team-item.png" alt="...">
-                        </div>
+            <div class="single-item mobile-team">
+                <div><div class="top-wrap__items__mobile first">
+                    <img src="../dist/img/team/kostenchyk.png" alt=""/>
+                    <p>ANDRIOD<br>DEVELOPER</p>
+                    <div class="top-wrap__items--doted-arrow-first">
+                        <span>&#149;</span>
+                        <span>&#149;</span>
+                        <span>&#149;</span>
+                        <span>&#149;</span>
+                        <span class="last"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
                     </div>
+                    <div class="top-wrap__items--triangle-first"></div>
+                </div><div class="mobile-developer">
+                    <h2 class="right-block__title">VLADIMIR KOSTENCHYK</h2>
+                    <p class="right-block__sign">Android Developer</p>
+                    <p class="right-block__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ut pretium pretium tempor. Ut eget imperdiet neque.
+                        In volutpat ante semper diam molestie, et aliquam erat laoreet.
+                        Sed sit amet arcu aliquet, molestie justo at, auctor nunc.
+                        Ut pretium pretium tempor. Ut eget imperdiet neque.
+                    </p>
+                </div></div>
+                <div><div class="top-wrap__items__mobile second">
+                    <img src="../dist/img/team/Chagovets.png" alt=""/>
+                    <p>UX & UI<br/>DESIGNER</p>
+                    <div class="top-wrap__items--doted-arrow-second">
+                        <span>&#149;</span>
+                        <span>&#149;</span>
+                        <span>&#149;</span>
+                        <span>&#149;</span>
+                        <span class="last"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="top-wrap__items--triangle-second"></div>
+                </div><div class="designer">
+                    <h2 class="right-block__title">VERONICA CHAGOVETS</h2>
+                    <p class="right-block__sign">UX & UI Designer</p>
+                    <p class="right-block__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ut pretium pretium tempor. Ut eget imperdiet neque.
+                        In volutpat ante semper diam molestie, et aliquam erat laoreet.
+                        Sed sit amet arcu aliquet, molestie justo at, auctor nunc.
+                        Ut pretium pretium tempor. Ut eget imperdiet neque.
+                    </p>
+                </div></div>
+                <div><div class="top-wrap__items__mobile third">
+                    <img src="../dist/img/team/Burikin.png" alt=""/>
+                    <p>WEB<br>DEVELOPMENT</p>
+                    <div class="top-wrap__items--doted-arrow-third">
+                        <span>&#149;</span>
+                        <span>&#149;</span>
+                        <span>&#149;</span>
+                        <span>&#149;</span>
+                        <span class="last"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="top-wrap__items--triangle-third"></div>
+                </div><div class="web-developer">
+                    <h2 class="right-block__title">ALEX BURYKIN</h2>
+                    <p class="right-block__sign">WEB Developer</p>
+                    <p class="right-block__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ut pretium pretium tempor. Ut eget imperdiet neque.
+                        In volutpat ante semper diam molestie, et aliquam erat laoreet.
+                        Sed sit amet arcu aliquet, molestie justo at, auctor nunc.
+                        Ut pretium pretium tempor. Ut eget imperdiet neque.
+                    </p>
+                </div></div>
+            </div>
+            <div class="left-block">
+                <div class="slider center autoplay" id="team-carousel">
+                    <div><img src="../dist/img/teams%20work/Bubble.png" alt="..."></div>
+                    <div><img src="../dist/img/teams%20work/Doctor.png" alt="..."></div>
+                    <div><img src="../dist/img/teams%20work/Investing%20Solutions.png" alt="..."></div>
+                    <div><img src="../dist/img/teams%20work/Punk.png" alt="..."></div>
                 </div>
-            </div><div class="right-block mobile-developer">
-                <h2 class="right-block__title">ALEX BURLA</h2>
-                <p class="right-block__sign">iOS Developer</p>
+            </div>
+            <div class="right-block mobile-developer">
+                <h2 class="right-block__title">VLADIMIR KOSTENCHYK</h2>
+                <p class="right-block__sign">Android Developer</p>
                 <p class="right-block__description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Ut pretium pretium tempor. Ut eget imperdiet neque.
@@ -263,7 +421,8 @@
                     Sed sit amet arcu aliquet, molestie justo at, auctor nunc.
                     Ut pretium pretium tempor. Ut eget imperdiet neque.
                 </p>
-            </div><div class="right-block designer">
+            </div>
+            <div class="right-block designer">
                 <h2 class="right-block__title">VERONICA CHAGOVETS</h2>
                 <p class="right-block__sign">UX & UI Designer</p>
                 <p class="right-block__description">
@@ -273,8 +432,9 @@
                     Sed sit amet arcu aliquet, molestie justo at, auctor nunc.
                     Ut pretium pretium tempor. Ut eget imperdiet neque.
                 </p>
-            </div><div class="right-block web-developer">
-                <h2 class="right-block__title">ANTON BOKSHA</h2>
+            </div>
+            <div class="right-block web-developer">
+                <h2 class="right-block__title">ALEX BURYKIN</h2>
                 <p class="right-block__sign">WEB Developer</p>
                 <p class="right-block__description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -376,6 +536,17 @@
             <span>db2@gmail.com</span>
         </div>
     </div>
+    <div class="footer mobile">
+        <h2 class="footer__title">WE ARE ONLINE</h2>
+        <div class="footer__contact-block">
+            <img src="../dist/img/smartphone.svg" alt=""/>
+            <span>1-233-00-88</span>
+        </div>
+        <div class="footer__contact-block">
+            <img src="../dist/img/email.svg" alt=""/>
+            <span>db2@gmail.com</span>
+        </div>
+    </div>
     <div class="mail-fixed-button">
         <a class="mail-fixed-button__link" href="mailto:db2@gmail.com">
             <i class="fa fa-envelope-o" aria-hidden="true"></i>
@@ -403,10 +574,13 @@
 </div>
 <script src="../dist/js/app.js"></script>
 <script src="js/modernizr-2.8.3.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- In production install slick 'bower install slick --save-dev' -->
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <script>
     $(document).ready(function(){
-        $('.center').slick({
+        $('#head-slider').slick({
             infinite: true,
             autoplay: true,
             autoplaySpeed: 2000,
@@ -421,7 +595,7 @@
                         arrows: false,
                         centerMode: true,
                         centerPadding: '40px',
-                        slidesToShow: 3
+                        slidesToShow: 1
                     }
                 },
                 {
@@ -434,6 +608,63 @@
                     }
                 }
             ]
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $('#team-carousel').slick({
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            dots: true,
+            arrows: false,
+            centerMode: true,
+            centerPadding: '185px',
+            slidesToShow: 1,
+            responsive: [
+                {
+                    breakpoint: 1025,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '100px',
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '25%',
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '60px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $('.single-item.mobile-team').slick({
+            dots: true
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $('.what-we-do__right-block--mobile').slick({
+            dots: true
         });
     });
 </script>

@@ -18,10 +18,9 @@ gulp.task('clean', function() {
         .pipe(clean());
 });
 
-gulp.task('sass', function () {
+gulp.task('sass',['clean'], function () {
     return gulp.src([
         'app/font-awesome/*.scss',
-        'bower_components/bootstrap/dist/css/bootstrap.css',
         'bower_components/slick-carousel/slick/slick.scss',
         'app/sass/*.sass'
     ])
@@ -52,24 +51,20 @@ gulp.task('minify-css', function() {
         .pipe(gulp.dest('dist/css/'));
 });
 
-gulp.task('scripts', function() {
+gulp.task('scripts',['clean'], function() {
     return gulp.src([
         'bower_components/jquery/dist/jquery.js',
         'bower_components/jquery-ui/jquery-ui.min.js',
         'bower_components/bootstrap/dist/js/bootstrap.js',
         'bower_components/slick-carousel/slick/slick.min.js',
         'app/js/*.js'
-        // 'app/js/menu-and-scroll.js',
-        // 'app/js/tabs.js',
-        // 'app/js/menu-indicator.js',
-        // 'app/js/responsive.js'
     ])
         .pipe(concat('app.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js/'));
 });
 
-gulp.task('images', function(){
+gulp.task('images',['clean'], function(){
     return gulp.src('app/img/**/*.+(png|jpg|gif|svg)')
         .pipe(imagemin())
         .pipe(gulp.dest('dist/img'))

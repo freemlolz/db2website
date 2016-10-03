@@ -1,6 +1,6 @@
 $(document).ready(function () {
     //rotation speed and timer
-    var speed = 5000;
+    var speed = 2000;
 
     var run = setInterval(rotate, speed);
     var slides = $('.slide-item');
@@ -27,7 +27,7 @@ $(document).ready(function () {
         if (e.target.id == previous) {
             container.stop().animate({
                 'left': 0
-            }, 1500, function () {
+            }, 500, function () {
                 container.find(elm + ':first').before(container.find(elm + ':last'));
                 resetSlides();
             });
@@ -36,7 +36,7 @@ $(document).ready(function () {
         if (e.target.id == next) {
             container.stop().animate({
                 'left': item_width * -2
-            }, 1500, function () {
+            }, 500, function () {
                 container.find(elm + ':last').after(container.find(elm + ':first'));
                 resetSlides();
             });
